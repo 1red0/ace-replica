@@ -28,11 +28,11 @@ export default function Navbar() {
       <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
         <Link href="/admission"><li>Admitere</li></Link>
         <Link href="/about"><li>Despre noi</li></Link>
-        <Link href="/underconstruction"><li>Învățământ</Link>
-        <Link href="/underconstruction"><li><Link href="/underconstruction">Cercetare</li></Link>
-        <Link href="/underconstruction"><li><Link href="/underconstruction">Comunitate</li></Link>
-        <Link href="/underconstruction"><li><Link href="/underconstruction">Media</li></Link>
-        <Link href="/underconstruction"><li><Link href="/underconstruction">Servicii</li></Link>
+        <Link href="/underconstruction"><li>Învățământ</li></Link>
+        <Link href="/underconstruction"><li>Cercetare</li></Link>
+        <Link href="/underconstruction"><li>Comunitate</li></Link>
+        <Link href="/underconstruction"><li>Media</li></Link>
+        <Link href="/underconstruction"><li>Servicii</li></Link>
         <Link href="/underconstruction"><li>Manifestări</li></Link>
       </ul>
     </div>
