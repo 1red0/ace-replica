@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  web-react:
+    container_name: web-react
+    hostname: web-react
+    image: web-react:latest
+    environment:
+      PORT: 80
+      HOST: 0.0.0.0
+      NODE_ENV: production
+    networks:
+      - default
+    ports:
+      - 4200:80
+
+networks:
+  default:
+    driver: bridge
