@@ -26,14 +26,14 @@ export default function Navbar() {
         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" /></svg>
       </button>
       <ul className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-        <Link href="/admission"><li>Admitere</li></Link>
-        <Link href="/about"><li>Despre noi</li></Link>
-        <Link href="/underconstruction"><li>Învățământ</li></Link>
-        <Link href="/underconstruction"><li>Cercetare</li></Link>
-        <Link href="/underconstruction"><li>Comunitate</li></Link>
-        <Link href="/underconstruction"><li>Media</li></Link>
-        <Link href="/underconstruction"><li>Servicii</li></Link>
-        <Link href="/underconstruction"><li>Manifestări</li></Link>
+        <li><Link href="/admission">Admitere</Link></li>
+        <li><Link href="/about">Despre noi</Link></li>
+        <li><Link href="/underconstruction">Învățământ</Link></li>
+        <li><Link href="/underconstruction">Cercetare</Link></li>
+        <li><Link href="/underconstruction">Comunitate</Link></li>
+        <li><Link href="/underconstruction">Media</Link></li>
+        <li><Link href="/underconstruction">Servicii</Link></li>
+        <li><Link href="/underconstruction">Manifestări</Link></li>
       </ul>
     </div>
   </div>
