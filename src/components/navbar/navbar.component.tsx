@@ -1,8 +1,9 @@
 'use client';
-import Link from 'next/link';
+
 import React from 'react';
 import Logo from '../../assets/sigla_mica.png';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [theme, setTheme] = React.useState('dark');
@@ -48,33 +49,33 @@ export default function Navbar() {
             </svg>
           </button>
           <ul
-            className={`menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 ${
+            className={`space-y-2 border menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 md:absolute absolute ${
               menuOpen ? 'block' : 'hidden'
             }`}
           >
-            <li>
-              <Link className='btn' href="/admission">Admitere</Link>
+            <li className="border rounded-md shadow-sm">
+              <Link className='btn py-3' href="/admission">Admitere</Link>
             </li>
-            <li>
-              <Link className='btn' href="/about">Despre noi</Link>
+            <li className="border rounded-md shadow-sm">
+              <Link className='btn py-3' href="/about">Despre noi</Link>
             </li>
-            <li >
-              <Link className='btn' href="/underconstruction">Învățământ</Link>
+            <li className="border rounded-md shadow-sm">
+              <Link className='btn py-3' href="/underconstruction">Învățământ</Link>
             </li>
-            <li>
-              <Link className='btn' href="/underconstruction">Cercetare</Link>
+            <li className="border rounded-md shadow-sm">
+              <Link className='btn py-3' href="/underconstruction">Cercetare</Link>
             </li>
-            <li>
-              <Link className='btn' href="/underconstruction">Comunitate</Link>
+            <li className="border rounded-md shadow-sm">
+              <Link className='btn py-3' href="/underconstruction">Comunitate</Link>
             </li>
-            <li>
-              <Link className='btn' href="/underconstruction">Media</Link>
+            <li className="border rounded-md shadow-sm">
+              <Link className='btn py-3' href="/underconstruction">Media</Link>
             </li>
-            <li>
-              <Link className='btn' href="/underconstruction">Servicii</Link>
+            <li className="border rounded-md shadow-sm">
+              <Link className='btn py-3' href="/underconstruction">Servicii</Link>
             </li>
-            <li>
-              <Link className='btn' href="/underconstruction">Manifestări</Link>
+            <li className="border rounded-md shadow-sm">
+              <Link className='btn py-3' href="/underconstruction">Manifestări</Link>
             </li>
           </ul>
         </div>

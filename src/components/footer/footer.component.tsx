@@ -27,7 +27,6 @@ export default function Footer() {
             <br />Blvd. Decebal nr. 107, Craiova, Dolj, România
             <br />RO-200440
             <br />tel +40 251 438 198, e-mail:info@ace.ucv.ro
-          
           </p>
         </aside>
       </footer></>
