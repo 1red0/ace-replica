@@ -53,30 +53,45 @@ export default function Navbar() {
               menuOpen ? 'block' : 'hidden'
             }`}
           >
-            <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/admission">Admitere</Link>
-            </li>
+            <div>
+              <li className="border rounded-md shadow-sm">
+                <Link className='btn py-3' href="/admission">Admitere</Link>
+              </li>
+            </div>
+            <div></div>
             <li className="border rounded-md shadow-sm">
               <Link className='btn py-3' href="/about">Despre noi</Link>
             </li>
-            <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/underconstruction">Învățământ</Link>
-            </li>
-            <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/underconstruction">Cercetare</Link>
-            </li>
-            <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/underconstruction">Comunitate</Link>
-            </li>
-            <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/underconstruction">Media</Link>
-            </li>
-            <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/underconstruction">Servicii</Link>
-            </li>
-            <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/underconstruction">Manifestări</Link>
-            </li>
+            <div>
+              <li className="border rounded-md shadow-sm">
+                <Link className='btn py-3' href="/underconstruction">Învățământ</Link>
+              </li>
+            </div>
+            <div>
+              <li className="border rounded-md shadow-sm">
+                <Link className='btn py-3' href="/underconstruction">Cercetare</Link>
+              </li>
+            </div>
+            <div>
+              <li className="border rounded-md shadow-sm">
+                <Link className='btn py-3' href="/underconstruction">Comunitate</Link>
+              </li>
+            </div>
+            <div>
+              <li className="border rounded-md shadow-sm">
+                <Link className='btn py-3' href="/underconstruction">Media</Link>
+              </li>
+            </div>
+            <div>
+              <li className="border rounded-md shadow-sm">
+                <Link className='btn py-3' href="/underconstruction">Servicii</Link>
+              </li>
+            </div>
+            <div>
+              <li className="border rounded-md shadow-sm">
+                <Link className='btn py-3' href="/underconstruction">Manifestări</Link>
+              </li>
+            </div>
           </ul>
         </div>
       </div>
