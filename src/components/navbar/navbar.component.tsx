@@ -24,7 +24,7 @@ export default function Navbar() {
   };
 
   return (
-    <div className="navbar bg-base-200 shadow-2xl border-b overflow-x-auto">
+    <div className="navbar bg-base-200 shadow-2xl border-b">
       <div className="navbar-start">
         <div className={`dropdown ${menuOpen ? 'open' : ''}`}>
           <button
