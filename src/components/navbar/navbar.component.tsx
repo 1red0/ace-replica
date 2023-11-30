@@ -54,35 +54,35 @@ export default function Navbar() {
             }`}
           >
             <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/admission"><button type='button' className='md:absolute absolute text-center'>Admitere</button></Link>
+              <Link className='btn py-3' href="/admission"><button type='button'>Admitere</button></Link>
             </li>
 
             <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/about"><button type='button' className='md:absolute absolute text-center'>Despre noi</button></Link>
+              <Link className='btn py-3' href="/about"><button type='button'>Despre noi</button></Link>
             </li>
 
             <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/underconstruction"><button type='button' className='md:absolute absolute text-center'>Învățământ</button></Link>
+              <Link className='btn py-3' href="/underconstruction"><button type='button'>Învățământ</button></Link>
             </li>
 
             <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/underconstruction"><button type='button' className='md:absolute absolute text-center'>Cercetare</button></Link>
+              <Link className='btn py-3' href="/underconstruction"><button type='button'>Cercetare</button></Link>
             </li>
     
             <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/underconstruction"><button type='button' className='md:absolute absolute text-center'>Comunitate</button></Link>
+              <Link className='btn py-3' href="/underconstruction"><button type='button'>Comunitate</button></Link>
             </li>
 
             <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/underconstruction"><button type='button' className='md:absolute absolute text-center'>Media</button></Link>
+              <Link className='btn py-3' href="/underconstruction"><button type='button'>Media</button></Link>
             </li>
 
             <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/underconstruction"><button type='button' className='md:absolute absolute text-center'>Servicii</button></Link>
+              <Link className='btn py-3' href="/underconstruction"><button type='button'>Servicii</button></Link>
             </li>
 
             <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/underconstruction"><button type='button' className='md:absolute absolute text-center'>Manifestări</button></Link>
+              <Link className='btn py-3' href="/underconstruction"><button type='button'>Manifestări</button></Link>
             </li>
 
           </ul>
