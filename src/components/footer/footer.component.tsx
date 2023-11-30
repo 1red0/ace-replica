@@ -19,6 +19,7 @@ export default function Footer() {
         <Link href='/admission' className="link link-hover">Informații generale</Link>
         <Link href='/underconstruction' className="link link-hover">Licență</Link>
         <Link href='/underconstruction' className="link link-hover">Master</Link>
+        <Link href='/underconstruction' className="link link-hover">Doctorat</Link>
       </nav>
     </footer><footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
         <aside className="items-center grid-flow-col">
