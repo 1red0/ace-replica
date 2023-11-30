@@ -14,7 +14,7 @@ const newsData: News[] = [
     {
       id: 3,
       title: 'Programe de internship',
-      description: 'Lista programelor de interhip cu frimele partenere ACE',
+      description: 'Lista programelor de internship cu frimele partenere ACE',
       date: '2023-11-27',
     },
     {
