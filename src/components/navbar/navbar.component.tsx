@@ -54,35 +54,35 @@ export default function Navbar() {
             }`}
           >
             <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/admission"><button type='button'>Admitere</button></Link>
+              <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/admission"><button type='button'>Admitere</button></Link>
             </li>
 
             <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/about"><button type='button'>Despre noi</button></Link>
+              <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/about"><button type='button'>Despre noi</button></Link>
             </li>
 
             <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/underconstruction"><button type='button'>Învățământ</button></Link>
+              <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Învățământ</button></Link>
             </li>
 
             <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/underconstruction"><button type='button'>Cercetare</button></Link>
+              <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Cercetare</button></Link>
             </li>
     
             <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/underconstruction"><button type='button'>Comunitate</button></Link>
+              <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Comunitate</button></Link>
             </li>
 
             <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/underconstruction"><button type='button'>Media</button></Link>
+              <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Media</button></Link>
             </li>
 
             <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/underconstruction"><button type='button'>Servicii</button></Link>
+              <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Servicii</button></Link>
             </li>
 
             <li className="border rounded-md shadow-sm">
-              <Link className='btn py-3' href="/underconstruction"><button type='button'>Manifestări</button></Link>
+              <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Manifestări</button></Link>
             </li>
 
           </ul>
