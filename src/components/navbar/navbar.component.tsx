@@ -53,28 +53,28 @@ export default function Navbar() {
             }`}
           >
             <li>
-              <Link href="/admission">Admitere</Link>
+              <Link className='btn' href="/admission">Admitere</Link>
             </li>
             <li>
-              <Link href="/about">Despre noi</Link>
+              <Link className='btn' href="/about">Despre noi</Link>
+            </li>
+            <li >
+              <Link className='btn' href="/underconstruction">Învățământ</Link>
             </li>
             <li>
-              <Link href="/underconstruction">Învățământ</Link>
+              <Link className='btn' href="/underconstruction">Cercetare</Link>
             </li>
             <li>
-              <Link href="/underconstruction">Cercetare</Link>
+              <Link className='btn' href="/underconstruction">Comunitate</Link>
             </li>
             <li>
-              <Link href="/underconstruction">Comunitate</Link>
+              <Link className='btn' href="/underconstruction">Media</Link>
             </li>
             <li>
-              <Link href="/underconstruction">Media</Link>
+              <Link className='btn' href="/underconstruction">Servicii</Link>
             </li>
             <li>
-              <Link href="/underconstruction">Servicii</Link>
-            </li>
-            <li>
-              <Link href="/underconstruction">Manifestări</Link>
+              <Link className='btn' href="/underconstruction">Manifestări</Link>
             </li>
           </ul>
         </div>
