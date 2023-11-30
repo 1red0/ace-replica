@@ -5,26 +5,34 @@ import teamMembers from '@/dummy-data/team.list';
 
 export default function Team() {
   return (
-
-    <div className="min-h-screen bg-base-300 text-gray">
+<div className="min-h-screen flex flex-col md:flex-row bg-base-300 overflow-x-auto">
+<div className="md:flex-1 flex flex-col mx-auto items-center justify-center p-8 bg-base-300 overflow-x-auto border">
       <div className="container mx-auto py-8">
-        <h2 className="text-3xl font-bold mb-2 mt-4 mx-16">Profesorii noștri</h2>
+        <h2 className="text-3xl font-bold mb-4 mx-8">Profesorii noștri</h2>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 mx-4 my-8 p-8">
+        <div className="flex flex-wrap justify-center">
           {teamMembers.map((member) => (
-            <div key={member.id} className="bg-base-100 p-4 shadow-xl rounded-md border">
-              <div className="avatar">
-                <div className="w-24 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                  <Image src={Teacher}  alt='teacher'/>
+            <div key={member.id} className="card lg:card-side bg-base-100 shadow-2xl border mx-4 my-4 flex-grow p-4 w-full md:w-80 min-h-fit max-w-7xl">
+
+                
+                <figure>
+                  <Image src={Teacher} alt={member.name} width={70} height={70}/>
+                </figure>
+                  <div className="card-body">
+                  <h2 className="card-title">{member.name}</h2>
+                  <p>{member.role}</p>
+                  <div className="card-actions justify-end">
+                    <button className="btn btn-primary">Profil</button>
+                  </div>
                 </div>
               </div>
-              <h3 className="text-lg font-bold mb-2">{member.name}</h3>
-              <p className="text-sm text-gray">{member.role}</p>
-            </div>
+
           ))}
         </div>
       </div>
     </div>
+</div>
+
 
 );
 };

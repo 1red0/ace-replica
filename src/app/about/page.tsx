@@ -1,15 +1,7 @@
-'use client';
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
 import React from 'react';
 
 export default function About() {
-
-  const router = useRouter();
-
-  const navigateToTeamPage = () => {
-    router.push('/team');
-  };
   
   return (
     <div className="min-h-screen bg-base-300 text-gray">
@@ -67,8 +59,8 @@ export default function About() {
             Structura facultăţii este formată actualmente din 2 departamente:
           </h3>
           <ul className="list-disc pl-8 mb-4">
-            <li>Departamentul de Automatică, Electronică şi Mecatronică (<Link href="#" className="link link-hover text-blue-500 underline">link</Link>),</li>
-            <li>Departamentul de Calculatoare şi Tehnologia informaţiei (<Link href="#" className="link link-hover text-blue-500 underline">link</Link>).</li>
+            <li>Departamentul de Automatică, Electronică şi Mecatronică (<Link href="/underconstruction" className="link link-hover text-blue-500 underline">link</Link>),</li>
+            <li>Departamentul de Calculatoare şi Tehnologia informaţiei (<Link href="/underconstruction" className="link link-hover text-blue-500 underline">link</Link>).</li>
           </ul>
 
           <h3 className="text-xl font-bold mb-4">
@@ -93,7 +85,7 @@ export default function About() {
             <li>Preparatori: 1</li>
           </ul>
           <div className="card-actions justify-end">
-                <button onClick={navigateToTeamPage} className="btn btn-primary">Cunoaște echipa</button>
+                <Link href='/team'><button className="btn btn-primary">Profesorii noștrii</button></Link>
           </div>
         </div>    
         
