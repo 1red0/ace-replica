@@ -7,12 +7,12 @@ import Link from 'next/link';
 export default function Home() {
   
   return (
-    <div className="min-h-screen flex">
+    <div className="min-h-screen flex flex-col md:flex-row">
         {/* Presentation Container */}
-        <div className="flex-1 flex justify-center p-8 bg-base-300">
+        <div className="md:flex-1 flex justify-center p-8 bg-base-300">
           <div className="max-w-lg text-center">
             <div className="mockup-window border bg-base-200 shadow-xl">
-              <div className="flex justify-center px-4 py-16 bg-base-100">
+              <div className="flex justify-center px-4 md:px-0 py-16 bg-base-100">
                 <div className="hero min-w-screen bg-base-100">
                   <div className="hero-content flex-col lg:flex-row-reverse">
                     <Image src={Logo} alt='LOGO' width={200} height={234}/>
@@ -25,16 +25,15 @@ export default function Home() {
               </div>
             </div>
           </div>
-
         </div>
 
         {/* News Container */}
 
-        <div className="flex-1 flex flex-col max-w-xl min-w-min items-center justify-center p-8 bg-base-100 overflow-x-auto border-l">
+        <div className="md:flex-1 flex flex-col max-w-xl min-w-min items-center justify-center p-8 bg-base-100 overflow-x-auto border-l">
           <Link href="/news"><button className="btn btn-primary mb-4">Toate știrile</button></Link>
           <div className="flex flex-wrap justify-center">
             {newsData.map((news) => (
-              <div key={news.id} className="card lg:card-side bg-base-300 shadow-2xl border mx-4 my-4 flex-grow p-4 w-80 min-h-fit max-w-7xl">
+              <div key={news.id} className="card lg:card-side bg-base-300 shadow-2xl border mx-4 my-4 flex-grow p-4 w-full md:w-80 min-h-fit max-w-7xl">
                 <figure>
                   <Image src={NewsLogo} alt={news.title} width={70} height={70}/>
                 </figure>
