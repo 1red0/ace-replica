@@ -7,9 +7,9 @@ import Link from 'next/link';
 export default function Home() {
   
   return (
-    <div className="min-h-screen flex flex-col md:flex-row">
+    <div className="min-h-screen flex flex-col md:flex-row bg-base-300 overflow-x-auto">
         {/* Presentation Container */}
-        <div className="md:flex-1 flex justify-center p-8 bg-base-300 max-w-screen-md mx-auto">
+        <div className="md:flex-1 flex justify-center p-8 bg-base-300 min-w-screen-md mx-auto md:max-w-screen-2xl overflow-x-auto">
           <div className="max-w-lg text-center">
             <div className="mockup-window border bg-base-200 shadow-xl">
               <div className="flex justify-center px-4 md:px-0 py-16 bg-base-100">
@@ -29,7 +29,7 @@ export default function Home() {
 
         {/* News Container */}
 
-        <div className="md:flex-1 flex flex-col max-w-screen-md mx-auto items-center justify-center p-8 bg-base-100 overflow-x-auto border">
+        <div className="md:flex-1 flex flex-col max-w-screen-md mx-auto items-center justify-center p-8 bg-base-100 overflow-x-auto border md:max-w-screen-2xl">
           <Link href="/news"><button className="btn btn-primary mb-4">Toate știrile</button></Link>
           <div className="flex flex-wrap justify-center">
             {newsData.map((news) => (

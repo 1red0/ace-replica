@@ -6,7 +6,7 @@ import Link from 'next/link';
 export default function Footer() {
 
   return (
-    <><footer className="footer p-10 bg-base-200 text-base-content border-t">
+    <><footer className="footer p-10 bg-base-200 text-base-content border-t overflow-x-auto">
       <nav>
         <header className="footer-title">Utile</header>
         <Link href='/underconstruction' className="link link-hover">Ghidul Studentului</Link>
@@ -20,7 +20,7 @@ export default function Footer() {
         <Link href='/underconstruction' className="link link-hover">Licență</Link>
         <Link href='/underconstruction' className="link link-hover">Master</Link>
       </nav>
-    </footer><footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
+    </footer><footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300 overflow-x-auto">
         <aside className="items-center grid-flow-col">
           <Image src={Logo} alt="LOGO" />
           <p>Facultatea de Automatică, Calculatoare și Electronică 
