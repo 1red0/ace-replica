@@ -6,9 +6,8 @@ export default function Admission() {
   return (
 <div className="min-h-screen bg-base-300 text-gray">
       <div className="container mx-auto py-8">
-        <h2 className="text-3xl font-bold mb-4">Admission - Faculty of Automation</h2>
 
-        <div className="bg-base-100 p-8 shadow-lg rounded-md border">
+        <div className="card bg-base-100 shadow-xl mx-4 my-8 p-8 rounded-md border">
           <h3 className="text-xl font-bold mb-4">About the Faculty</h3>
           <p>
             The Faculty of Automation is committed to excellence in education, research, and innovation in the field of
@@ -17,7 +16,7 @@ export default function Admission() {
           </p>
         </div>
 
-        <div className="mt-8 bg-base-100 p-8 shadow-lg rounded-md border">
+        <div className="card bg-base-100 shadow-xl mx-4 my-8 p-8 rounded-md border">
           <h3 className="text-xl font-bold mb-4">Programs Offered</h3>
           <ul className="list-disc pl-4">
             <li>Bachelor of Science in Automation Engineering</li>
@@ -26,7 +25,7 @@ export default function Admission() {
           </ul>
         </div>
 
-        <div className="mt-8 bg-base-100 p-8 shadow-lg rounded-md border">
+        <div className="card bg-base-100 shadow-xl mx-4 my-8 p-8 rounded-md border">
           <h3 className="text-xl font-bold mb-4">Admission Requirements</h3>
           <p>
             To apply for admission to the Faculty of Automation, applicants must meet the following requirements:
@@ -40,7 +39,7 @@ export default function Admission() {
           </ul>
         </div>
 
-        <div className="mt-8 bg-base-100 p-8 shadow-lg rounded-md border">
+        <div className="card bg-base-100 shadow-xl mx-4 my-8 p-8 rounded-md border">
           <h3 className="text-xl font-bold mb-4">Application Process</h3>
           <p>
             Interested candidates can apply online through our admissions portal. The application deadline for the
@@ -49,7 +48,7 @@ export default function Admission() {
           </p>
         </div>
 
-        <div className="mt-8 bg-base-100 p-8 shadow-lg rounded-md border">
+        <div className="card bg-base-100 shadow-xl mx-4 my-8 p-8 rounded-md border">
           <h3 className="text-xl font-bold mb-4">Contact Us</h3>
           <p>
             If you have any questions or need assistance, please feel free to contact our admissions office at{' '}

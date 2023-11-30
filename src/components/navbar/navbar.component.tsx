@@ -4,9 +4,11 @@ import React from 'react';
 import Logo from '../../assets/sigla_mica.png';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navbar() {
-  const [theme, setTheme] = React.useState('dark');
+  const [theme, setTheme] = React.useState('light');
   const toggleTheme = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
   };
@@ -93,21 +95,29 @@ export default function Navbar() {
           <Image src={Logo} alt="LOGO" height="50"></Image>
           {/* Conditionally render text based on screen width */}
           <span className="hidden md:inline">Facultatea de Automatică, Calculatoare și Electronică</span>
-          <span className="md:hidden">FACE</span>
+          <span className="md:hidden">ACE</span>
         </Link>
       </div>
 
       <div className="navbar-end">
+        <div className='px-2'>
+          <FontAwesomeIcon icon={faSun} />
+        </div>
         <label className="swap swap-rotate">
+        
           <input
             onClick={toggleTheme}
             type="checkbox"
             value="default"
-            className="toggle theme-controller bg-gray-800 border-gray-600 [--tglbg:theme(colors.slate.500)] checked:bg-blue-300 checked:border-blue-800 checked:[--tglbg:theme(colors.blue.900)] row-start-1 col-start-1 col-span-2"
+            className="toggle theme-controller bg-blue-600 border-gray-600 [--tglbg:theme(colors.gray.100)] checked:bg-gray-600 checked:border-gray-600 checked:[--tglbg:theme(colors.black)] row-start-1 col-start-1 col-span-2"
           />
           <div className="swap-on"></div>
           <div className="swap-off"></div>
         </label>
+        <div className='px-2'>
+          <FontAwesomeIcon icon={faMoon} />
+        </div>
+        
         <button className="btn btn-ghost btn-circle">
           <svg
             xmlns="http://www.w3.org/2000/svg"

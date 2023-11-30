@@ -7,7 +7,7 @@ import Navbar from '@/components/navbar/navbar.component'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'FACE Replica',
+  title: 'ACE Replica',
   description: '',
 }
 
