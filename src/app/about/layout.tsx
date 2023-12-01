@@ -14,6 +14,8 @@ export default function AboutLayout({
   children: React.ReactNode
 }>) {
   return (
+
     <div className={inter.className}>{children}</div> 
+    
   )
 }

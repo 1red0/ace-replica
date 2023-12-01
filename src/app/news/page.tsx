@@ -1,11 +1,11 @@
 'use client';
-import { useEffect, useRef, useState } from 'react';
 import NewsLogo from '../../assets/news.png';
 import Image from 'next/image';
 import groupNewsByDate from '@/services/news.service';
 import newsData from '@/dummy-data/news.list';
+import { useRef, useEffect, FC, useState } from 'react';
   
-  const NewsCard: React.FC<{ news: News; index: number }> = ({ news, index }) => {
+  const NewsCard: FC<{ news: News; index: number }> = ({ news, index }) => {
     const cardRef = useRef<HTMLDivElement>(null);
   
     useEffect(() => {
@@ -15,6 +15,7 @@ import newsData from '@/dummy-data/news.list';
     }, [index]);
   
     return (
+
       <div ref={cardRef} className="bg-base-100 border rounded-lg overflow-hidden shadow-xl p-6">
         <figure className="relative">
           <Image src={NewsLogo} alt={news.title} width={600} height={400} />
@@ -28,15 +29,17 @@ import newsData from '@/dummy-data/news.list';
           <button className="btn btn-primary">Citește</button>
         </div>
       </div>
+
     );
   };
   
-  const News: React.FC = () => {
+  const News: FC = () => {
     const [selectedDate, setSelectedDate] = useState<string>(new Date().toISOString().split('T')[0]);
     const groupedNews = groupNewsByDate(newsData);
     const todayNews = groupedNews[selectedDate] || [];
   
     return (
+      
       <div className="flex-1 flex items-center min-h-screen justify-center p-8 bg-base-300">
         <div className="max-w-3xl w-full">
           <div className="mb-8">
@@ -58,6 +61,7 @@ import newsData from '@/dummy-data/news.list';
           </div>
         </div>
       </div>
+
     );
   };
   

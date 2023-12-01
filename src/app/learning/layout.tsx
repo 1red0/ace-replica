@@ -14,6 +14,8 @@ export default function LearningLayout({
   children: React.ReactNode
 }>) {
   return (
+
     <div className={inter.className}>{children}</div>
+    
   )
 }

@@ -1,11 +1,11 @@
 import Link from 'next/link';
-import React from 'react';
 
 export default function Admission() {
 
 
   return (
-<div className="min-h-screen bg-base-300 text-gray">
+
+    <div className="min-h-screen bg-base-300 text-gray">
       <div className="container mx-auto py-8">
 
         <div className="card bg-base-100 shadow-xl mx-4 my-8 p-8 rounded-md border">
@@ -33,5 +33,6 @@ export default function Admission() {
 
       </div>
     </div>
+    
   );
 }

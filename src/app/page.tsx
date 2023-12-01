@@ -7,6 +7,7 @@ import Link from 'next/link';
 export default function Home() {
   
   return (
+
     <div className="min-h-screen flex flex-col md:flex-row bg-base-300 overflow-x-auto">
         {/* Presentation Container */}
         <div className="md:flex-1 flex justify-center p-8 bg-base-300 min-w-screen-md mx-auto md:max-w-screen-2xl overflow-x-auto">
@@ -33,6 +34,7 @@ export default function Home() {
           <Link href="/news"><button className="btn btn-primary mb-4">Toate știrile</button></Link>
           <div className="flex flex-wrap justify-center">
             {newsData.map((news) => (
+
               <div key={news.id} className="card lg:card-side bg-base-300 shadow-2xl border mx-4 my-4 flex-grow p-4 w-full md:w-80 min-h-fit max-w-7xl">
                 <figure>
                   <Image src={NewsLogo} alt={news.title} width={70} height={70}/>
@@ -46,9 +48,12 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+
             ))}
+            
           </div>
         </div>
       </div>
+      
   );
 }

@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 import Logo from '../../assets/sigla_mica.png'
 import Link from 'next/link';

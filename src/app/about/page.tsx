@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import React from 'react';
 
 export default function About() {
   
   return (
+
     <div className="min-h-screen bg-base-300 text-gray">
       <div className="container mx-auto py-8">
 
@@ -110,5 +110,6 @@ export default function About() {
 
       </div>
     </div>
+    
   );
 }

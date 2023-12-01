@@ -1,6 +1,5 @@
 'use client';
-
-import React from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Logo from '../../assets/sigla_mica.png';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -8,19 +7,27 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navbar() {
-  const [theme, setTheme] = React.useState('light');
+  const [theme, setTheme] = useState('light');
   const toggleTheme = () => {
     setTheme(theme === 'dark' ? 'light' : 'dark');
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     const element = document.querySelector<HTMLElement>('html');
     if (element) {
       element.setAttribute('data-theme', theme);
     }
   }, [theme]);
 
-  const [menuOpen, setMenuOpen] = React.useState(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (menuRef.current) {
+      menuRef.current.style.animation = `fadeIn 0.5s ease-out 0.1s 1 normal both`;
+    }
+  })
+
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const handleMenuToggle = () => {
     setMenuOpen(!menuOpen);
@@ -50,42 +57,44 @@ export default function Navbar() {
               />
             </svg>
           </button>
-          <ul
-            className={`space-y-2 border menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 md:absolute absolute ${
+          <ul 
+            className={`space-y-2 border menu menu-sm dropdown-content z-[1] p-2 shadow bg-base-100 rounded-box w-52 md:absolute absolute ${
               menuOpen ? 'block' : 'hidden'
             }`}
           >
-            <li className="border rounded-md shadow-sm">
-              <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/admission"><button type='button'>Admitere</button></Link>
-            </li>
+            <div ref={menuRef} className='space-y-2'>
+              <li className="border rounded-md shadow-sm">
+                <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/admission"><button type='button'>Admitere</button></Link>
+              </li>
 
-            <li className="border rounded-md shadow-sm">
-              <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/about"><button type='button'>Despre noi</button></Link>
-            </li>
+              <li className="border rounded-md shadow-sm">
+                <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/about"><button type='button'>Despre noi</button></Link>
+              </li>
 
-            <li className="border rounded-md shadow-sm">
-              <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Învățământ</button></Link>
-            </li>
+              <li className="border rounded-md shadow-sm">
+                <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Învățământ</button></Link>
+              </li>
 
-            <li className="border rounded-md shadow-sm">
-              <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Cercetare</button></Link>
-            </li>
-    
-            <li className="border rounded-md shadow-sm">
-              <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Comunitate</button></Link>
-            </li>
+              <li className="border rounded-md shadow-sm">
+                <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Cercetare</button></Link>
+              </li>
+      
+              <li className="border rounded-md shadow-sm">
+                <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Comunitate</button></Link>
+              </li>
 
-            <li className="border rounded-md shadow-sm">
-              <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Media</button></Link>
-            </li>
+              <li className="border rounded-md shadow-sm">
+                <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Media</button></Link>
+              </li>
 
-            <li className="border rounded-md shadow-sm">
-              <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Servicii</button></Link>
-            </li>
+              <li className="border rounded-md shadow-sm">
+                <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Servicii</button></Link>
+              </li>
 
-            <li className="border rounded-md shadow-sm">
-              <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Manifestări</button></Link>
-            </li>
+              <li className="border rounded-md shadow-sm">
+                <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Manifestări</button></Link>
+              </li>
+            </div>
 
           </ul>
         </div>
