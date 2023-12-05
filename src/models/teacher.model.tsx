@@ -1,7 +1,7 @@
 type Teacher = {
-    id: number;
+    id: string;
     name: string;
     surname: string;
     role: string;
-    departmentID: number;
+    departmentID: string;
 }

@@ -1,5 +1,5 @@
 type Department = {
-    id: number;
+    id: string;
     title: string;
-    members: number;
+    members: string;
 }

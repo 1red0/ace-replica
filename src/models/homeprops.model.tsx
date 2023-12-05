@@ -1,0 +1,3 @@
+type HomeProps = {
+    feed: News[]
+}

@@ -1,6 +1,8 @@
 type News = {
-    id: number;
+    id: string;
     title: string;
     description: string;
+    content: string | null;
+    published: boolean;
     date: string;
 }
