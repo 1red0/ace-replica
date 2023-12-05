@@ -8,17 +8,17 @@ export default function Footer() {
     <><footer className="footer p-10 bg-base-200 text-base-content border-t">
       <nav>
         <header className="footer-title">Utile</header>
-        <Link href='/underconstruction' className="link link-hover">Ghidul Studentului</Link>
-        <Link href='/underconstruction' className="link link-hover">Secretariat</Link>
+        <Link href='/studentGuide' className="link link-hover">Ghidul Studentului</Link>
+        <Link href='/secretariat' className="link link-hover">Secretariat</Link>
         <Link href='/news' className="link link-hover">Știri</Link>
         <Link href='/teachers' className="link link-hover">Profesori</Link>
       </nav>
       <nav>
         <header className="footer-title">Admitere</header>
         <Link href='/admission' className="link link-hover">Informații generale</Link>
-        <Link href='/underconstruction' className="link link-hover">Licență</Link>
-        <Link href='/underconstruction' className="link link-hover">Master</Link>
-        <Link href='/underconstruction' className="link link-hover">Doctorat</Link>
+        <Link href='/admission/licenta' className="link link-hover">Licență</Link>
+        <Link href='/admission/master' className="link link-hover">Master</Link>
+        <Link href='/admission/doctorat' className="link link-hover">Doctorat</Link>
       </nav>
     </footer><footer className="footer px-10 py-4 border-t bg-base-200 text-base-content border-base-300">
         <aside className="items-center grid-flow-col">

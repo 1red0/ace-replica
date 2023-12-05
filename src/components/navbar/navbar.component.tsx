@@ -72,27 +72,27 @@ export default function Navbar() {
               </li>
 
               <li className="border rounded-md shadow-sm">
-                <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Învățământ</button></Link>
+                <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/learning"><button type='button'>Învățământ</button></Link>
               </li>
 
               <li className="border rounded-md shadow-sm">
-                <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Cercetare</button></Link>
+                <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/research"><button type='button'>Cercetare</button></Link>
               </li>
       
               <li className="border rounded-md shadow-sm">
-                <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Comunitate</button></Link>
+                <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/community"><button type='button'>Comunitate</button></Link>
               </li>
 
               <li className="border rounded-md shadow-sm">
-                <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Media</button></Link>
+                <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/media"><button type='button'>Media</button></Link>
               </li>
 
               <li className="border rounded-md shadow-sm">
-                <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Servicii</button></Link>
+                <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/services"><button type='button'>Servicii</button></Link>
               </li>
 
               <li className="border rounded-md shadow-sm">
-                <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/underconstruction"><button type='button'>Manifestări</button></Link>
+                <Link tabIndex={0} onClick={handleMenuToggle} aria-expanded={menuOpen} className='btn py-3' href="/manifestos"><button type='button'>Manifestări</button></Link>
               </li>
             </div>
 

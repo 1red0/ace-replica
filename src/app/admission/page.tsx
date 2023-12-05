@@ -18,9 +18,9 @@ export default function Admission() {
         <div className="card bg-base-100 shadow-xl mx-4 my-8 p-8 rounded-md border">
           <h3 className="text-xl font-bold mb-4">Facultatea noastră oferă la momentul actual, potenţialilor candidaţi:</h3>
           <ul className="list-disc pl-4">
-            <li>Pentru <a className='underline'>licenţă</a>, patru domenii de studiu cu şapte programe de studii posibile (<Link href='/underconstruction' className="link link-hover text-blue-500 underline">link</Link>)</li>
-            <li>Pentru <a className='underline'>master</a>, patru domenii de studiu cu şapte programe de studii posibile (<Link href='/underconstruction' className="link link-hover text-blue-500 underline">link</Link>)</li>
-            <li>Pentru <a className='underline'>şcoala doctorală</a>, trei domenii de studiu posibile (<Link href='/underconstruction' className="link link-hover text-blue-500 underline">link</Link>)</li>
+            <li>Pentru <a className='underline'>licenţă</a>, patru domenii de studiu cu şapte programe de studii posibile (<Link href='/admission/licenta' className="link link-hover text-blue-500 underline">link</Link>)</li>
+            <li>Pentru <a className='underline'>master</a>, patru domenii de studiu cu şapte programe de studii posibile (<Link href='/admission/master' className="link link-hover text-blue-500 underline">link</Link>)</li>
+            <li>Pentru <a className='underline'>şcoala doctorală</a>, trei domenii de studiu posibile (<Link href='/admission/doctorat' className="link link-hover text-blue-500 underline">link</Link>)</li>
           </ul>
         </div>
 
