@@ -5,7 +5,7 @@ const newsData: News[] = [
       description: 'Lista studenților bursieri (burse de merit, sociale și de performanță)',
       date: '2023-11-28',
       content: '',
-      publisher: true,
+      published: true,
     },
     {
       id: '2',
@@ -13,7 +13,7 @@ const newsData: News[] = [
       description: 'Metodologie și regulament acordare burse studențești',
       date: '2023-11-27',
       content: '',
-      publisher: true,
+      published: true,
 
     },
     {
@@ -22,7 +22,7 @@ const newsData: News[] = [
       description: 'Lista programelor de internship cu frimele partenere ACE',
       date: '2023-11-27',
       content: '',
-      publisher: true,
+      published: true,
     },
     {
       id: '4',
@@ -30,7 +30,7 @@ const newsData: News[] = [
       description: 'Metodologia de alegeri a reprezentanților UCV',
       date: '2023-11-26',
       content: '',
-      publisher: true,
+      published: true,
     },
     {
       id: '5',
@@ -38,7 +38,7 @@ const newsData: News[] = [
       description: 'Festivitatea de înmânare a diplomelor de inginer pentru absolvenții',
       date: '2023-11-26',
       content: '',
-      publisher: true,
+      published: true,
     },
   ];
 
