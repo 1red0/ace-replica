@@ -1,4 +1,4 @@
-export default function Research() {
+export default function Manifestos() {
   return (
     <div className="min-h-screen bg-base-300 text-gray">
       <div className="container mx-auto py-8">
