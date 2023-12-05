@@ -25,7 +25,7 @@ export default function Secretariat() {
 
         <section id="introducere" className="mb-8">
           <div className="card bg-base-100 shadow-xl mx-4 my-8 p-8 rounded-md border">
-            <h3 className="text-2xl font-bold mb-2 text-gray-800">Introducere</h3>
+            <h3 className="text-2xl font-bold mb-2">Introducere</h3>
             <p>
               Bine ai venit la Secretariatul facultății! Această secțiune oferă informații importante despre aspectele
               birocratice și administrative ale facultății.
@@ -35,7 +35,7 @@ export default function Secretariat() {
 
         <section id="documente-necesare" className="mb-8">
           <div className="card bg-base-100 shadow-xl mx-4 my-8 p-8 rounded-md border">
-            <h3 className="text-2xl font-bold mb-2 text-gray-800">Documente Necesare</h3>
+            <h3 className="text-2xl font-bold mb-2">Documente Necesare</h3>
             <p>
               Află care sunt documentele necesare pentru diverse procese administrative, precum înscrierea la examene,
               eliberarea adeverințelor, sau alte cerințe specifice ale facultății.
@@ -48,7 +48,7 @@ export default function Secretariat() {
 
         <section id="program-de-lucru" className="mb-8">
           <div className="card bg-base-100 shadow-xl mx-4 my-8 p-8 rounded-md border">
-            <h3 className="text-2xl font-bold mb-2 text-gray-800">Program de Lucru</h3>
+            <h3 className="text-2xl font-bold mb-2">Program de Lucru</h3>
             <p>
               Consultă programul de lucru al secretariatului pentru a ști în ce perioade poți accesa serviciile administrative
               și a obține informații de interes.
@@ -62,7 +62,7 @@ export default function Secretariat() {
 
         <section id="contact" className="mb-8">
           <div className="card bg-base-100 shadow-xl mx-4 my-8 p-8 rounded-md border">
-            <h3 className="text-2xl font-bold mb-2 text-gray-800">Contact</h3>
+            <h3 className="text-2xl font-bold mb-2">Contact</h3>
             <p>
               Găsește informații de contact ale secretariatului pentru a putea lua legătura cu personalul administrativ și a
               primi răspunsuri la întrebările tale.

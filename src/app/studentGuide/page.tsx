@@ -25,7 +25,7 @@ export default function StudentGuide() {
 
         <section id="introducere" className="mb-8">
           <div className="card bg-base-100 shadow-xl mx-4 my-8 p-8 rounded-md border">
-            <h3 className="text-2xl font-bold mb-2 text-gray-800">Introducere</h3>
+            <h3 className="text-2xl font-bold mb-2">Introducere</h3>
             <p>
               Bine ai venit la facultatea noastră! Ghidul Studentului este conceput pentru a te ajuta să te integrezi și să
               ai o experiență reușită pe parcursul studiilor tale.
@@ -35,7 +35,7 @@ export default function StudentGuide() {
 
         <section id="programe-studiu" className="mb-8">
           <div className="card bg-base-100 shadow-xl mx-4 my-8 p-8 rounded-md border">
-            <h3 className="text-2xl font-bold mb-2 text-gray-800">Programe de Studiu</h3>
+            <h3 className="text-2xl font-bold mb-2">Programe de Studiu</h3>
             <p>
               Află mai multe despre programele de studiu oferite la facultate, planurile de învățământ și oportunitățile
               academice disponibile.
