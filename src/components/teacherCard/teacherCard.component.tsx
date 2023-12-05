@@ -1,8 +1,9 @@
 import Image from 'next/image';
 import Teacher from '../../assets/user.png';
 import Link from 'next/link';
+import { FC } from 'react';
 
-export const TeacherCard: React.FC<{ teacher: Teacher }> = ({ teacher }) => {
+export const TeacherCard: FC<{ teacher: Teacher }> = ({ teacher }) => {
     return (
       <div className="card lg:card-side bg-base-100 shadow-2xl border mx-4 my-4 flex-grow p-4 w-full md:w-80 min-h-fit max-w-7xl">
         <figure>

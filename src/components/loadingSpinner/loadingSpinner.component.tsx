@@ -1,4 +1,6 @@
-export const LoadingSpinner: React.FC = () => {
+import { FC } from "react";
+
+export const LoadingSpinner: FC = () => {
     return (
       <div className="flex items-center justify-center">
         Loading... &nbsp;

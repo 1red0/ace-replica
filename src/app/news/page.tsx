@@ -1,18 +1,27 @@
-'use client'
-import React from 'react';
+'use client';
+import { useEffect, useState, useMemo, FC } from 'react';
 import { LoadingSpinner } from '@/components/loadingSpinner/loadingSpinner.component';
 import { NewsCard } from '@/components/newsCard/newsCard.component';
 
-const News: React.FC = () => {
-  const [feed, setFeed] = React.useState<News[]>([]);
-  const [loading, setLoading] = React.useState<boolean>(true);
+const News: FC = () => {
+  const [feed, setFeed] = useState<News[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [currentPage, setCurrentPage] = useState<number>(1);
+  const newsPerPage = useMemo(() => 6, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const fetchNews = async () => {
       try {
         const response = await fetch('/api/news');
         const data = await response.json();
-        setFeed(data.feed);
+
+        const sortedNews = data.feed.sort((a: { date: string | number | Date; }, b: { date: string | number | Date; }) => {
+          const dateA = new Date(a.date).getTime();
+          const dateB = new Date(b.date).getTime();
+          return dateB - dateA;
+        });
+
+        setFeed(sortedNews);
       } catch (error) {
         console.error('Error fetching news: ', error);
       } finally {
@@ -23,16 +32,46 @@ const News: React.FC = () => {
     fetchNews();
   }, []);
 
+  const indexOfLastNews = currentPage * newsPerPage;
+  const indexOfFirstNews = indexOfLastNews - newsPerPage;
+  const currentNews = feed.slice(indexOfFirstNews, indexOfLastNews);
+
+  const paginate = (pageNumber: number) => {
+    setCurrentPage(pageNumber);
+  };
+
   let newsContent;
 
   if (loading) {
     newsContent = <LoadingSpinner />;
   } else {
     newsContent = (
-      <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {feed.map((news, index) => (
-          <NewsCard key={news.id} news={news} index={index} />
-        ))}
+      <div>
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {currentNews.map((news, index) => (
+            <NewsCard key={news.id} news={news} index={index} />
+          ))}
+        </div>
+        <div className="mt-4">
+          {feed.length > newsPerPage && (
+            <nav>
+              <ul className="flex justify-center">
+                {Array.from({ length: Math.ceil(feed.length / newsPerPage) }, (_, index) => (
+                  <li key={index} className="mr-2">
+                    <button
+                      className={`${
+                        index + 1 === currentPage ? 'btn btn-primary' : 'btn btn-secondary'
+                      }`}
+                      onClick={() => paginate(index + 1)}
+                    >
+                      {index + 1}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          )}
+        </div>
       </div>
     );
   }

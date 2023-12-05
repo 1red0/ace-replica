@@ -1,14 +1,14 @@
 'use client';
 import { LoadingSpinner } from '@/components/loadingSpinner/loadingSpinner.component';
-import React from 'react';
+import { useEffect, useState } from 'react';
 import { TeacherCard } from '@/components/teacherCard/teacherCard.component';
 
 
 export default function Teachers() {
-  const [teachers, setTeachers] = React.useState<Teacher[]>([]);
-  const [loading, setLoading] = React.useState<boolean>(true);
+  const [teachers, setTeachers] = useState<Teacher[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const fetchTeachers = async () => {
       try {
         const response = await fetch('/api/teachers');

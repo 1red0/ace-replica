@@ -1,15 +1,15 @@
 'use client'
-import React from 'react';
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import { LoadingSpinner } from '@/components/loadingSpinner/loadingSpinner.component';
 import NewsLogo from '../../../assets/news.png';
 
 export default function NewsDetails({ params }: Readonly<{ params: { id: string } }>) {
   
-  const [news, setNews] = React.useState<News | null>(null);
-  const [loading, setLoading] = React.useState<boolean>(true);
+  const [news, setNews] = useState<News | null>(null);
+  const [loading, setLoading] = useState<boolean>(true);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const fetchNewsDetails = async () => {
       if (params.id) {
         try {
