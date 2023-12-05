@@ -29,7 +29,7 @@ export default function NewsDetails({ params }: Readonly<{ params: { id: string 
 
   if (loading) {
     return (
-      <div className='flex-1 flex items-center min-h-screen justify-center p-8 bg-base-300'><LoadingSpinner />;</div>
+      <div className='flex-1 flex items-center min-h-screen justify-center p-8 bg-base-300'><LoadingSpinner /></div>
     )
   }
 
