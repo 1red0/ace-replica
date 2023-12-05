@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: '',
 }
 
-export default function TeamLayout({
+export default function TeachersLayout({
   children,
 }: Readonly<{
   children: React.ReactNode

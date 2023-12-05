@@ -1,18 +1,30 @@
-const teamMembers = [
+const teamMembers: Teacher[] = [
 {
-    id: 1,
-    name: 'John Doe',
+    id: 'adysad',
+    name: 'John',
+    surname: 'Doe',
+    email: '',
+    department: '',
+    departmentID: '',
     role: 'Professor of Automation Engineering',
 },
 {
-    id: 2,
-    name: 'Jane Smith',
-    role: 'Researcher in Control Systems',
+    id: 'asdasdasgsaf',
+    name: 'John',
+    surname: 'Doe',
+    email: '',
+    department: '',
+    departmentID: '',
+    role: 'Professor of Automation Engineering',
 },
 {
-    id: 3,
-    name: 'Bob Johnson',
-    role: 'Assistant Professor of Robotics',
+    id: 'adyasdfhadfsad',
+    name: 'John',
+    surname: 'Doe',
+    email: '',
+    department: '',
+    departmentID: '',
+    role: 'Professor of Automation Engineering',
 },
 ];
 

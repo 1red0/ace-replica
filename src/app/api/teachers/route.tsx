@@ -4,11 +4,9 @@ import { NextResponse } from "next/server";
 
 export async function GET() {
     try {
-      const newsFeed = await prisma.post.findMany({
-        where: { published: true },
-      });
+      const teachersFeed = await prisma.teacher.findMany();
 
-    return NextResponse.json({feed: newsFeed})
+    return NextResponse.json({teachers: teachersFeed})
       
     } catch (error) {
       console.error(error);

@@ -39,7 +39,7 @@ export default function Home (){
   let newsContent;
 
   if (loading) {
-    newsContent = <div className="text-center"><LoadingSpinner /></div>;
+    newsContent = <div className="text-center p-10"><LoadingSpinner /></div>;
   } else if (noNewsAvailable) {
     newsContent = <div className="text-center">No news available</div>;
   } else {
@@ -55,7 +55,7 @@ export default function Home (){
               <p>{news.description}</p>
               <p>{news.date}</p>
               <div className="card-actions justify-end">
-                <button className="btn btn-primary">Citește</button>
+                <Link href={`/news/${news.id}`}><button className="btn btn-primary">Citește</button></Link>
               </div>
             </div>
           </div>

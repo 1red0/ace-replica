@@ -85,7 +85,7 @@ export default function About() {
             <li>Preparatori: 1</li>
           </ul>
           <div className="card-actions justify-end">
-                <Link href='/team'><button className="btn btn-primary">Profesorii noștrii</button></Link>
+                <Link href='/teachers'><button className="btn btn-primary">Profesorii noștrii</button></Link>
           </div>
         </div>    
         

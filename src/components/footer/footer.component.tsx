@@ -11,7 +11,7 @@ export default function Footer() {
         <Link href='/underconstruction' className="link link-hover">Ghidul Studentului</Link>
         <Link href='/underconstruction' className="link link-hover">Secretariat</Link>
         <Link href='/news' className="link link-hover">Știri</Link>
-        <Link href='/team' className="link link-hover">Profesori</Link>
+        <Link href='/teachers' className="link link-hover">Profesori</Link>
       </nav>
       <nav>
         <header className="footer-title">Admitere</header>

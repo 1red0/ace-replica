@@ -3,5 +3,7 @@ type Teacher = {
     name: string;
     surname: string;
     role: string;
-    departmentID: string;
+    email?: string;
+    department?: Department;
+    departmentID?: string;
 }
