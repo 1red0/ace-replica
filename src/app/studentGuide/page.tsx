@@ -49,7 +49,7 @@ export default function StudentGuide() {
 
         <section id="resurse-utile" className="mb-8">
           <div className="card bg-base-100 shadow-xl mx-4 my-8 p-8 rounded-md border">
-            <h3 className="text-2xl font-bold mb-2 text-gray-800">Resurse Utile</h3>
+            <h3 className="text-2xl font-bold mb-2">Resurse Utile</h3>
             <p>
               Descoperă resursele utile disponibile pentru studenți, biblioteci, laboratoare, platforme online și altele.
             </p>
@@ -62,7 +62,7 @@ export default function StudentGuide() {
 
         <section id="activitati-studentesti" className="mb-8">
           <div className="card bg-base-100 shadow-xl mx-4 my-8 p-8 rounded-md border">
-            <h3 className="text-2xl font-bold mb-2 text-gray-800">Activități Studențești</h3>
+            <h3 className="text-2xl font-bold mb-2">Activități Studențești</h3>
             <p>
               Participă la diverse activități studențești pentru a-ți dezvolta abilitățile și pentru a te bucura de viața academică.
             </p>
